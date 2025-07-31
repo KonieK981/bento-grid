@@ -17,7 +17,8 @@
 /* Normal font */
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("./public/fonts/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype");
   font-weight: 400 500;
   font-style: normal;
 }
@@ -25,7 +26,8 @@
 /* Italic styles */
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("./public/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
   font-weight: 400 500;
   font-style: italic;
 }
@@ -46,7 +48,8 @@ body {
 }
 
 .container > div {
-  border-radius: 15px;
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 .card-1 {
@@ -59,14 +62,15 @@ body {
   padding: 1rem 3rem;
 }
 
-.card-1 h3 {
+.card-1 p {
   font-size: 3.2rem;
   font-weight: var(--font-weight-medium);
   text-align: center;
   letter-spacing: -1px;
+  line-height: 50px;
 }
 
-.card-1 h3 span {
+.card-1 p span {
   color: var(--yellow-500);
 }
 
@@ -85,13 +89,30 @@ body {
 }
 
 .card-2 {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 0.4rem;
 }
+.card-2 img {
+  width: 100%;
+}
+
 .card-3 {
   background-color: var(--yellow-500);
 }
+
+.card-3 img {
+  width: 260px;
+}
+
 .card-4 {
   background-color: var(--purple-100);
 }
+
+.card-4 img {
+  width: 100%;
+}
+
 .card-5 {
 }
 .card-6 {
@@ -101,8 +122,25 @@ body {
 .card-7 {
   background-color: var(--yellow-100);
 }
+
+.card-7 img {
+  width: 210px;
+}
+
 .card-8 {
   background-color: var(--yellow-500);
+  padding: 1rem 1.6rem;
+}
+
+.card-8 img {
+  width: 260px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 32px;
 }
 
 @media (min-width: 700px) {
