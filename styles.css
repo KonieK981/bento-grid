@@ -4,6 +4,8 @@
   --purple-500: hsl(256, 67%, 59%);
   --yellow-100: hsl(31, 66%, 93%);
   --yellow-500: hsl(39, 100%, 71%);
+  --gray-100: #f5f5f5;
+  --gray-200: #ffffff;
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 7%);
   --font-size: 18px;
@@ -32,12 +34,18 @@
   font-style: italic;
 }
 
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   color: var(--black);
-  background-color: var(--white);
+  background-color: var(--gray-100);
 }
 
 .container {
@@ -47,7 +55,14 @@ body {
   gap: 1rem;
 }
 
-.container > div {
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8 {
   border-radius: 12px;
   padding: 1rem;
 }
@@ -57,44 +72,74 @@ body {
   color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1.3rem;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
 }
 
-.card-1 p {
-  font-size: 3.2rem;
-  font-weight: var(--font-weight-medium);
+.card-1 h3 {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-regular);
   text-align: center;
-  letter-spacing: -1px;
-  line-height: 50px;
+  line-height: 2.3rem;
 }
 
-.card-1 p span {
+.card-1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-1 h3 span {
   color: var(--yellow-500);
 }
 
-.card-1 .space-ajust {
-  position: relative;
-  right: -6px;
-}
-
 .card-1 p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: var(--purple-100);
+  margin-top: 5px;
 }
 
 .card-1 img {
-  max-width: 200px;
+  max-width: 170px;
 }
 
 .card-2 {
   font-weight: 700;
   font-size: 2rem;
-  padding: 0.4rem;
+  background-color: var(--gray-200);
 }
+
 .card-2 img {
   width: 100%;
+  -webkit-mask-image: radial-gradient(
+      circle 30px at top left,
+      transparent 0,
+      black 30px
+    ),
+    radial-gradient(circle 30px at top right, transparent 0, black 30px),
+    radial-gradient(circle 30px at bottom left, transparent 0, black 30px),
+    radial-gradient(circle 30px at bottom right, transparent 0, black 30px),
+    radial-gradient(circle 30px at top center, transparent 0, black 30px),
+    radial-gradient(circle 30px at bottom center, transparent 0, black 30px);
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+
+  mask-image: radial-gradient(
+      circle 30px at top left,
+      transparent 0,
+      black 30px
+    ),
+    radial-gradient(circle 30px at top right, transparent 0, black 30px),
+    radial-gradient(circle 30px at bottom left, transparent 0, black 30px),
+    radial-gradient(circle 30px at bottom right, transparent 0, black 30px),
+    radial-gradient(circle 30px at top center, transparent 0, black 30px),
+    radial-gradient(circle 30px at bottom center, transparent 0, black 30px);
+}
+
+.card p {
+  font-size: 1rem;
 }
 
 .card-3 {
@@ -137,10 +182,10 @@ body {
 }
 
 .title {
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  line-height: 32px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 21px;
 }
 
 @media (min-width: 700px) {
