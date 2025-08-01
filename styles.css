@@ -23,15 +23,7 @@
     format("truetype");
   font-weight: 400 500;
   font-style: normal;
-}
-
-/* Italic styles */
-@font-face {
-  font-family: "DM Sans";
-  src: url("./public/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf")
-    format("truetype");
-  font-weight: 400 500;
-  font-style: italic;
+  font-display: swap;
 }
 
 h3,
@@ -105,7 +97,9 @@ body {
 }
 
 .card-1 img {
-  max-width: 170px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .card-2 {
@@ -116,6 +110,8 @@ body {
 
 .card-2 img {
   width: 100%;
+  height: auto;
+  display: block;
   -webkit-mask-image: radial-gradient(
       circle 30px at top left,
       transparent 0,
@@ -139,6 +135,10 @@ body {
     radial-gradient(circle 30px at bottom right, transparent 0, black 30px),
     radial-gradient(circle 30px at top center, transparent 0, black 30px),
     radial-gradient(circle 30px at bottom center, transparent 0, black 30px);
+}
+
+.card-2 h3 {
+  margin-top: 1rem;
 }
 
 .card-3 {
