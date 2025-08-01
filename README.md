@@ -71,12 +71,4 @@ To further improve the app, the next step would be to make it fully responsive, 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
----
-
-**Suggestions:**
-
-- Replace `@yourusername` with your actual Frontend Mentor username.
-- Consider adding a "Getting Started" or "How to run locally" section for clarity.
-- Double-check all image paths to ensure they work both locally
+- Frontend Mentor - [@KonieK981](https://www.frontendmentor.io/profile/KonieK981)
